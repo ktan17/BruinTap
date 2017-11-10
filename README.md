@@ -1,6 +1,21 @@
 # HOTH 3 - iOS Workshop README
 
-## Getting Started
+## Table of Contents
+
+- <a href="#gs">Getting Started</a>
+- <a href="#ib">Interface Builder</a>
+  - <a href="#ui">Setting up the UI (User Interface)</a>
+  - <a href="#al">Setting Constraints Using Auto Layout</a>
+  - <a href="#xcassets">Adding Images Using XCAssets</a>
+  - <a href="#objects">Linking your IB Objects to your Code</a>
+  - <a href="#link">Linking IB Actions (Button Taps) to your Code</a>
+- Coding in Swift
+  - <a href="#properties">Declaring the Properties we Need</a>
+  - <a href="#score">Incrementing Score when we Tap the Button</a>
+  - <a href="#timer">Implementing a Timer</a>
+  - <a href="#tap">Disabling and Enabling the Tap Button</a>
+
+## <a id="gs">Getting Started</a>
 
 1. Begin by creating a new project in Xcode.
 2. Select "Create a new Xcode project" near the bottom left of the window.
@@ -27,7 +42,7 @@
 
 ------
 
-## Interface Builder (IB)
+## <a id="ib">Interface Builder (IB)</a>
 
 1. In the **Project Navigator** on the left, you should see all of the files associated with our project. The only group (folder) we're interested in for the purposes of this tutorial is the **BruinTap** group. The BruinTapTests, BruinTapUITests, and Products groups aren't important for now.
 2. Inside the **BruinTap** group you should see a file named **Main.storyboard**. Click it and you'll be taken to the Interface Builder.
@@ -36,7 +51,7 @@
 
 ------
 
-### Setting Up the UI (User Interface)
+### <a id="ui">Setting Up the UI (User Interface)</a>
 
 1. Located on the bottom right of the screen is a scrolling view containing UI objects that we can drag into our View Controller.
 2. Ensure that the third tab (circle with a square in it) is selected at the top of the pane.
@@ -57,7 +72,7 @@
 
 ------
 
-### Setting Constraints Using Auto Layout
+### <a id="al">Setting Constraints Using Auto Layout</a>
 
 1. Select the Button we placed in the top left corner.
 2. On the right side of the screen, open the **Attributes Inspector** by clicking the tab to the left of the ruler icon:
@@ -154,7 +169,7 @@
 
 ------
 
-### Adding Images Using XCAssets
+### <a id="xcassets">Adding Images Using XCAssets</a>
 
 1. In the **Project Navigator** on the left, select the folder icon named **Assets.xcassets**.
 2. In the left pane (the one containing the "AppIcon" entry), right click and select "New Image Set".
@@ -189,7 +204,7 @@
 
 ------
 
-### Linking your IB Objects to your Code
+### <a id="objects">Linking your IB Objects to your Code</a>
 
 1. Click on the two overlapping circles near the top right of Xcode to open the **Assistant Editor**.
 2. If it is difficult to see our View Controller, close the left pane if necessary by clicking on the button (square with black rectangle on the left side) to the left of "View as iPhone..." in the bottom left of the window.
@@ -226,7 +241,7 @@
 
 ------
 
-### Linking IB Actions (Button Taps) to your Code
+### <a id="link">Linking IB Actions (Button Taps) to your Code</a>
 
 1. While holding down control, click on the "Start" button and drag to the space directly **above** the `viewDidLoad()` function.
 2. In the window that appears, **ensure that the "Type" field says UIButton, else press "Cancel" and try again.**
@@ -256,7 +271,7 @@
 
 ## Coding in Swift
 
-### Declaring the Properties we Need
+### <a id="properties">Declaring the Properties we Need</a>
 
 1. Close the Assistant Editor by clicking on the "X" on the top right of the pane with our code in it.
 
@@ -283,7 +298,7 @@ var time: Double = 10
 
 ------
 
-### Incrementing Score when we Tap the Button
+### <a id="score">Incrementing Score when we Tap the Button</a>
 
 1. Inside the `tappedTapButton()` function, add the following code:
 
@@ -303,7 +318,7 @@ var time: Double = 10
 
 ------
 
-### Implementing a Timer
+### <a id="timer">Implementing a Timer</a>
 
 1. Inside ViewController.swift, declare a function exposed to Objective-C between `tappedTapButton()` and `viewDidLoad()` named **timerAction()** and fill it with the following code:
 
@@ -342,7 +357,7 @@ var time: Double = 10
 
 3. Build and run our app again. Tap the "Start" button and you should see the timer counting down!
 
-### Disabling and Enabling the Tap Button
+### <a id="tap">Disabling and Enabling the Tap Button</a>
 
 1. Inside the `viewDidLoad()` function, add the following code:
 

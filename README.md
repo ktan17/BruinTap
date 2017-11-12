@@ -1,5 +1,8 @@
 # HOTH 3 - iOS Workshop README
 
+**Slides**: https://docs.google.com/a/g.ucla.edu/presentation/d/1kx2xlov7sDKATmLG_OFprMpmrjRW5u-c6f1suQIamMM/edit?usp=sharing
+**Image**: https://imgur.com/a/u1fm6
+
 ## Table of Contents
 
 - <a href="#gs">Getting Started</a>
